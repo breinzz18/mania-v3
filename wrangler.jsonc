@@ -1,0 +1,6 @@
+{
+  // Lets Cloudflare deploy this folder as a static website (Workers static assets or Pages).
+  "name": "mania-v3",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./", "not_found_handling": "single-page-application" }
+}
