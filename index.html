@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<title>Mania Restaurante · Costa Adeje since 1996</title>
+<meta name="description" content="Mania Restaurante on the seafront promenade of Costa Adeje, Tenerife, since 1996. Steaks, paella, fish, pasta and pizza. Menu in 10 languages.">
+<meta name="theme-color" content="#F4EEE3">
+<meta property="og:title" content="Mania Restaurante · Costa Adeje">
+<meta property="og:description" content="Steaks, paella & pizza by the sea, since 1996.">
+<meta property="og:image" content="video/hero-landscape.jpg">
+<link rel="icon" href="brand/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="fonts/bricolage-grotesque-subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="video/hero-portrait.jpg" media="(max-aspect-ratio: 1/1)" fetchpriority="high">
+<link rel="preload" as="image" href="video/hero-landscape.jpg" media="(min-aspect-ratio: 1/1)" fetchpriority="high">
+<link rel="stylesheet" href="assets/app.css?v=2">
+<script>
+  (function (h, q) {
+    h.classList.add("js", "at-top");
+    if (/[?&]from=table/.test(q)) h.classList.add("table");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !h.classList.contains("table")) {
+      h.classList.add("intro-on"); setTimeout(function () { h.classList.remove("intro-on"); }, 3000);
+    }
+  })(document.documentElement, location.search);
+</script>
+</head>
+<body>
+
+<div class="intro" aria-hidden="true">
+  <div class="intro__inner">
+    <span class="logo"></span>
+    <svg class="intro__line" viewBox="0 0 340 22"><path d="M4 14 C 60 14 80 4 140 4 S 210 18 250 16 S 310 6 336 9"/></svg>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 0H1200V18C1080 4 1000 30 860 30S640 8 480 8S240 40 0 34Z"/></svg>
+</div>
+
+<header class="bar">
+  <div class="bar__in">
+    <span style="margin-right:auto"></span>
+    <button class="bar__btn" id="openLang" aria-haspopup="dialog"><svg class="flag" viewBox="0 0 30 20" id="langFlag" aria-hidden="true"></svg><span id="langCode">EN</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 1. the wordmark is a window onto the terrace -->
+  <section class="hero" id="hero" aria-labelledby="h1">
+    <div class="hero__stage">
+      <img class="hero__poster" id="heroPoster" alt="" fetchpriority="high">
+      <video class="hero__video" id="heroVideo" muted playsinline loop preload="auto" aria-hidden="true"></video>
+      <div class="hero__shade"></div>
+      <div class="hero__mask" aria-hidden="true"></div>
+      <div class="hero__hint" aria-hidden="true"><span data-t="scroll"></span><i></i></div>
+      <div class="hero__copy">
+        <h1 class="sr" id="h1">Mania Restaurante</h1>
+
+        <p class="hero__title" data-c="heroLine"></p>
+        <div class="hero__kicker">
+          <a id="heroRating" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;gap:8px;align-items:center"><span class="stars" aria-hidden="true"></span><span></span></a>
+          <span class="status" id="heroStatus" hidden></span>
+        </div>
+        <div class="hero__ctas">
+          <a class="btn btn--sun" href="#menu" id="ctaMenu"><span data-t="seeMenu"></span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+          <a class="btn btn--glass js-call"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span data-t="book"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. signature dishes, moving -->
+  <section class="sec" id="signature" aria-labelledby="sigTitle">
+    <div class="wrap sec__head"><h2 class="sec__title" id="sigTitle"><span class="reveal-line"><span data-t="signature"></span></span></h2></div>
+    <div class="reel" id="reel"></div>
+    <div class="reel-bar" id="reelBar" aria-hidden="true"></div>
+  </section>
+
+  <!-- 3. the menu as an editorial index -->
+  <section class="sec" id="menu" aria-labelledby="menuTitle">
+    <div class="wrap">
+      <div class="sec__head"><h2 class="sec__title" id="menuTitle"><span class="reveal-line"><span data-t="menu"></span></span></h2></div>
+      <div class="tools" role="search">
+        <label class="search"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="sr" data-t="search"></span>
+          <input id="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocorrect="off" spellcheck="false" data-t-ph="search"></label>
+      </div>
+      <ol class="index" id="index"></ol>
+      <div id="hitsBox" hidden><p class="results-note" id="hitsNote"></p><ul class="hits" id="hits"></ul><p class="empty" id="empty" hidden></p></div>
+      <div class="menu-foot"><p id="tax"></p>
+        <button class="btn btn--line" id="openPages"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg><span data-t="original"></span></button></div>
+    </div>
+  </section>
+
+  <!-- 4. story over the moving sea -->
+  <section class="story" id="story" aria-label="Mania">
+    <div class="story__stage">
+      <img id="storyPoster" alt="" loading="lazy">
+      <video id="storyVideo" muted playsinline loop preload="none" aria-hidden="true"></video>
+      <div class="wrap story__lines" id="storyLines"></div>
+    </div>
+  </section>
+
+  <!-- 5. guests -->
+  <section class="sec" aria-labelledby="guestsTitle">
+    <div class="wrap sec__head"><h2 class="sec__title" id="guestsTitle"><span class="reveal-line"><span data-t="guests"></span></span></h2></div>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <!-- 6. rating + visit -->
+  <section class="sec" aria-label="Google">
+    <div class="wrap score">
+      <div><span class="score__num" id="ratingNum"></span> <span class="stars" id="ratingStars" aria-hidden="true"></span><p class="score__meta" id="ratingCount"></p></div>
+      <blockquote class="quote" id="quote" hidden><p></p><cite></cite></blockquote>
+      <div class="ctas"><a class="btn btn--sun" id="readReviews" target="_blank" rel="noopener" data-t="readReviews"></a><a class="btn btn--line" id="leaveReview" target="_blank" rel="noopener" data-t="leaveReview"></a></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="visitTitle">
+    <div class="wrap">
+      <div class="sec__head"><h2 class="sec__title" id="visitTitle"><span class="reveal-line"><span data-t="findUs"></span></span></h2></div>
+      <div class="visit">
+        <div class="visit__map" id="map"><img id="mapImg" alt="" loading="lazy">
+          <button class="visit__pin" id="loadMap"><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span id="mapLabel"></span></span></button></div>
+        <div style="display:grid;gap:16px">
+          <p class="visit__addr" id="addr"></p>
+          <div class="hours" id="hours" hidden></div>
+          <div class="ctas"><a class="btn btn--sun" id="directions" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 18-8-8 18-2-8z"/></svg><span data-t="directions"></span></a><a class="btn btn--line js-call"><span data-t="call"></span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <svg class="foot__lights" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q 150 50 300 14 T 600 14 T 900 14 T 1200 10"/></svg>
+  <div class="wrap">
+    <span class="logo" aria-hidden="true"></span>
+    <div class="foot__grid">
+      <div class="foot__small"><span id="footAddr"></span><a class="js-call" id="footPhone" style="text-decoration:none"></a></div>
+      <div class="foot__links" id="socials"></div>
+      <div class="foot__small" id="footNotes"></div>
+    </div>
+  </div>
+</footer>
+
+<nav class="dock" id="dock" aria-label="Quick actions"></nav>
+
+<!-- category view -->
+<div class="cv" id="cv" role="dialog" aria-modal="true" aria-labelledby="cvTitle">
+  <div class="cv__scroll" id="cvScroll">
+    <div class="cv__media" id="cvMedia">
+      <div class="cv__top"><button class="cv__btn" id="cvClose" aria-label="Close"><svg class="ic" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></div>
+      <div class="cv__head"><h2 class="cv__title" id="cvTitle"></h2><span id="cvMeta" style="font-weight:700;opacity:.85"></span></div>
+    </div>
+    <div class="cv__body" id="cvBody"></div>
+  </div>
+</div>
+
+<div class="sheet" id="sheetLang" role="dialog" aria-modal="true" aria-labelledby="langTitle">
+  <div class="sheet__scrim" data-close></div>
+  <div class="sheet__panel"><div class="sheet__grab"></div>
+    <div class="sheet__head"><h2 id="langTitle" data-t="chooseLang"></h2><button class="sheet__x" data-close aria-label="Close"><svg class="ic" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="sheet__body"><ul class="langs" id="langs"></ul></div></div>
+</div>
+<div class="sheet" id="sheetPicks" role="dialog" aria-modal="true" aria-labelledby="picksTitle">
+  <div class="sheet__scrim" data-close></div>
+  <div class="sheet__panel"><div class="sheet__grab"></div>
+    <div class="sheet__head"><h2 id="picksTitle" data-t="picks"></h2><button class="sheet__x" data-close aria-label="Close"><svg class="ic" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="sheet__body" id="picksBody"></div></div>
+</div>
+
+<div class="reveal" id="reveal" aria-hidden="true"></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photos"><button class="lb__x" id="lbClose" aria-label="Close"><svg class="ic" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button><div class="lb__track" id="lbTrack"></div></div>
+
+<script src="assets/i18n.js?v=1"></script>
+<script src="data/site.js?v=1"></script>
+<script src="data/menu.js?v=1"></script>
+<script src="images/manifest.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

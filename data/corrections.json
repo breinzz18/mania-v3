@@ -1,0 +1,30 @@
+{
+  "_note": "Fixes applied on top of the PDF extraction by tools/build-menu.mjs. Each 'from' must match exactly, so a fix is skipped (and reported) if the PDF text changes.",
+  "fixes": [
+    { "n": "14",  "lang": "fi", "field": "desc",   "from": "Vntresca", "to": "Ventresca" },
+    { "n": "53",  "lang": "it", "field": "name",   "from": "Entrecoet", "to": "Entrecôte" },
+    { "cat": "hot-starters", "lang": "de", "field": "title", "from": "Heisse Vorspeisen", "to": "Heiße Vorspeisen" },
+    { "n": "11",  "lang": "es", "field": "name",   "from": "Ensalada Cesar", "to": "Ensalada César" },
+    { "n": "109", "lang": "es", "field": "desc",   "from": "Autentica de la Casa", "to": "auténtica de la casa" },
+    { "n": "121", "lang": "es", "field": "desc",   "from": "Autentica de la Casa", "to": "auténtica de la casa" },
+    { "n": "121", "lang": "fr", "field": "desc",   "from": "Authentique", "to": "authentique" },
+    { "n": "109", "lang": "en", "field": "desc",   "from": "the House", "to": "the house" },
+    { "n": "63",  "lang": "es", "field": "desc",   "from": "corazon", "to": "corazón" },
+    { "n": "64",  "lang": "es", "field": "desc",   "from": "ambeado", "to": "flambeado" },
+    { "n": "116", "lang": "es", "field": "desc",   "from": "cebolla, champiñones", "to": "champiñones" },
+    { "n": "116", "lang": "fi", "field": "desc",   "from": "sipulia, sieniä", "to": "sieniä" },
+    { "n": "103", "lang": "fi", "field": "detail", "from": "para 2 personas", "to": "2 hengelle" },
+    { "n": "99",  "lang": "it", "field": "desc",   "from": "carne y mariscos", "to": "carne e frutti di mare" },
+    { "n": "28",  "lang": "de", "field": "detail", "from": "4 Einh", "to": "4 Stück" },
+    { "n": "28",  "lang": "fr", "field": "detail", "from": "4 unid", "to": "4 pièces" },
+    { "n": "28",  "lang": "it", "field": "detail", "from": "4 unid", "to": "4 pezzi" },
+    { "n": "28",  "lang": "nl", "field": "detail", "from": "4 unid", "to": "4 stuks" },
+    { "n": "28",  "lang": "da", "field": "detail", "from": "4 unid", "to": "4 stk." },
+    { "n": "28",  "lang": "sv", "field": "detail", "from": "4 unid", "to": "4 st." },
+    { "n": "28",  "lang": "no", "field": "detail", "from": "4 unid", "to": "4 stk." },
+    { "n": "28",  "lang": "fi", "field": "detail", "from": "4 unid", "to": "4 kpl" },
+    { "n": "36",  "lang": "da", "field": "desc",   "from": "tranebærsauce", "to": "blåbærsauce" },
+    { "n": "37",  "lang": "en", "field": "name",   "from": "Padron Peppers", "to": "Padrón peppers" },
+    { "n": "37",  "lang": "fi", "field": "name",   "from": "Padron", "to": "Padrón" }
+  ]
+}
